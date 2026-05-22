@@ -4,12 +4,8 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
 import { Toaster } from "sonner";
-
-import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
   return (
@@ -104,40 +100,11 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   {
-    head: () => ({
-      meta: [
-        { charSet: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { title: "Team Credentials — Liquid Glass" },
-        {
-          name: "description",
-          content:
-            "Internal team credential manager for sharing test accounts across the team.",
-        },
-        { name: "theme-color", content: "#0f0f1a" },
-      ],
-      links: [{ rel: "stylesheet", href: appCss }],
-    }),
-    shellComponent: RootShell,
     component: RootComponent,
     notFoundComponent: NotFoundComponent,
     errorComponent: ErrorComponent,
   },
 );
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();

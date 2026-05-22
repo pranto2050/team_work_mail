@@ -1,7 +1,7 @@
 {
-  "buildCommand": "nitro build --preset vercel",
-  "outputDirectory": ".vercel/output",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/__fallback" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
