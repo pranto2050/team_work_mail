@@ -2,6 +2,8 @@
 
 A secure, modern credential manager designed for development teams to store and manage shared test accounts and credentials.
 
+![Project Demo](Project%20Demo.png)
+
 ## 🚀 Features
 - **Team Management:** Add, manage, and search team members easily.
 - **Credential Storage:** Store test accounts, labels, emails, usernames, and passwords securely for each member.
