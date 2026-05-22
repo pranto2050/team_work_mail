@@ -44,5 +44,10 @@ This project is ready to be deployed on **Vercel**.
 
 1. Push your code to GitHub.
 2. Import the repository in Vercel.
-3. Make sure to add the required Environment Variables in the Vercel dashboard (`VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY`).
+3. Add these Environment Variables in Vercel (Production, Preview, Development):
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_PUBLISHABLE_KEY`
+   - `SUPABASE_URL` (same value as `VITE_SUPABASE_URL`)
+   - `SUPABASE_PUBLISHABLE_KEY` (same value as `VITE_SUPABASE_PUBLISHABLE_KEY`)
+   - `SUPABASE_SERVICE_ROLE_KEY` (server-only; required for admin/server routes)
 4. Click Deploy!
