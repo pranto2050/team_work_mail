@@ -110,9 +110,11 @@ export function CredentialCard({ credential, onUpdate, onDelete }: Props) {
               aria-label="Edit"
               title="Edit"
             >
+
+              {/* Delete Barton or Barton for Delete */}
               <Pencil size={14} />
             </button>
-            <button
+            {/* <button
               type="button"
               className="glass-btn glass-btn-icon glass-btn-danger"
               onClick={() => setShowDeleteConfirm(true)}
@@ -120,7 +122,7 @@ export function CredentialCard({ credential, onUpdate, onDelete }: Props) {
               title="Delete"
             >
               <Trash2 size={14} />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

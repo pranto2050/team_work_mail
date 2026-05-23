@@ -77,6 +77,9 @@ export function MemberCard({ member, credentialCount, onDelete }: Props) {
           </span>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <span className="count-badge">{credentialCount}</span>
+
+            {/* Delete Barton or Barton for Delete */}
+            
             {/* <button
               type="button"
               onClick={(e) => {

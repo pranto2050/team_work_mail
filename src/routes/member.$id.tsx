@@ -220,6 +220,9 @@ function MemberPage() {
               </span>
             </div>
           </div>
+          
+          {/* Delete Barton or Barton for Delete */}
+
           {/* <button
             type="button"
             className="glass-btn glass-btn-danger"
