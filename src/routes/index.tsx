@@ -123,7 +123,7 @@ function HomePage() {
                   lineHeight: 1.1,
                 }}
               >
-                Team Credentials
+                Information Collector
               </h1>
               <p
                 style={{

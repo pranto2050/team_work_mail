@@ -1,4 +1,4 @@
-# Team Credentials Manager
+# Information Collector Manager
 
 A secure, modern credential manager designed for development teams to store and manage shared test accounts and credentials.
 
