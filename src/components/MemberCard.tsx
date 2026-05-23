@@ -77,7 +77,7 @@ export function MemberCard({ member, credentialCount, onDelete }: Props) {
           </span>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <span className="count-badge">{credentialCount}</span>
-            <button
+            {/* <button
               type="button"
               onClick={(e) => {
                 e.preventDefault();
@@ -89,7 +89,7 @@ export function MemberCard({ member, credentialCount, onDelete }: Props) {
               title="Delete member"
             >
               <Trash2 size={14} />
-            </button>
+            </button> */}
           </div>
         </div>
       </Link>

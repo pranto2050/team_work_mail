@@ -220,13 +220,13 @@ function MemberPage() {
               </span>
             </div>
           </div>
-          <button
+          {/* <button
             type="button"
             className="glass-btn glass-btn-danger"
             onClick={() => setShowDeleteMemberConfirm(true)}
           >
             <Trash2 size={14} /> Delete member
-          </button>
+          </button> */}
         </div>
 
         {/* Add credential */}
